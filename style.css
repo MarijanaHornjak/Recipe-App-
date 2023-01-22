@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+}
+header {
+  background-color: rgb(252, 215, 203);
+  /* height: 8rem; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: rgb(252, 215, 203);
+}
+
+header > h1 {
+  color: rgb(255, 133, 89);
+  margin: 1rem;
+  font-size: 4.8rem;
+
+  font-family: "Dancing Script", cursive;
+}
+header > img {
+  width: 8rem;
+}
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 50%;
+  font-size: 2rem;
+  background-image: url("./assets/icons8-cooking-64.png");
+  background-position-x: 98%;
+  background-position-y: 95%;
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 25px;
+  padding: 1rem 3rem;
+  margin: 3rem;
+  box-shadow: 0 0 0.5rem 0.2rem rgb(255, 133, 89);
+}
+input::placeholder {
+  color: rgb(167, 87, 50);
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+input:focus {
+  outline: none;
+}
+
+img {
+  width: 100%;
+  /* height: 100%; */
+  /* object-fit: contain; */
+}
+section {
+  height: 100vh;
+  /* width: 100vw; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: rgb(252, 215, 203);
+  margin: 3.2rem 2.4rem;
+}
+.container {
+  width: 90%;
+  /* height: auto; */
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.search-result {
+  margin-top: 5rem;
+  width: 100%;
+  display: grid;
+  grid-gap: 2.5rem;
+  /* grid-template: auto / repeat(auto-fit, minmax(30rem, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
+}
+.item {
+  width: 100%;
+  padding: 4.5rem;
+  background-color: rgb(249, 226, 219);
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  height: 30rem;
+}
+.item .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.8rem 0;
+}
+.item .title {
+  color: rgb(53, 53, 53);
+  margin: 5px;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.recipe-button {
+  background-color: rgb(255, 133, 89);
+  border: none;
+  border-radius: 9px;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+.view-recipe {
+  text-decoration: none;
+  padding: 0.5rem 0;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.item-data {
+  color: rgb(53, 53, 53);
+  display: block;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+.presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 233, 226);
+  font-size: 2rem;
+  color: rgb(167, 87, 50);
+  height: 30rem;
+  padding: 3rem;
+  margin: 3rem;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.quote p {
+  margin: 2rem;
+  font-size: 2.8rem;
+}
+.quote-author {
+  color: rgb(214, 133, 103);
+}
+/* 928px */
+@media (max-width: 58em) {
+  .search-result {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* 737.6px */
+@media (max-width: 46.1em) {
+  html {
+    font-size: 56.2%;
+  }
+}
+/* 600px */
+@media (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+  input {
+    width: 60%;
+  }
+}
+@media (max-width: 29.3em) {
+  input {
+    width: 70%;
+  }
+  header h1 {
+    text-align: center;
+    font-size: 4.4rem;
+  }
+  .quote p {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 22.2em) {
+  input {
+    width: 80%;
+  }
+  .quote p {
+    font-size: 2rem;
+  }
+}
